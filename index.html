@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">  
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+</head>
+<body>  
+  <div class="container">
+      <img class='logo' src='./images/logo.svg' alt='logo'>
+      <h2>We are launching <span class="bold">soon!</span></h2>
+      <h5>Subscribe and get notified</h5>
+
+      <form onsubmit="return validation()" novalidate>
+        <div class="row">
+          <div class="col-lg-8">
+            <input type="email" id='email' name='email' placeholder='Your email address...'><br>
+            <div id="error" class="text-sm-center"><p>Please provide a valid email addres</p></div>
+          </div>
+          <div class="col-lg-4">
+            <button class="mt-lg-0" type='submit' name="submit">Notify Me</button>
+          </div>
+        </div>
+      </form>
+
+      <img class='mockup' src='./images/illustration-dashboard.png' alt="mockup">
+
+      <div class="social-media">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+      </div>
+
+      <div class="copyright">&copy; Copyright Ping. All rights reserved.</div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.github.com/mdagudo/">María Agudo</a>.
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="./js/valid.js"></script>
+</body>
+</html>
