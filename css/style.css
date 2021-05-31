@@ -59,7 +59,7 @@ h5 {
 
 
 form {
-    width: 100%;
+    width: clamp(27.0rem, 80%, 40.0rem);
 }
 
 form input {
@@ -150,7 +150,7 @@ button:hover {
     margin-bottom: 3.0rem;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 1.1rem; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media screen and (min-width: 992px) {
@@ -160,5 +160,9 @@ button:hover {
 
     h5 {
         font-size: 1.8rem;
+    }
+
+    form {
+        width: 100%;
     }
 }
