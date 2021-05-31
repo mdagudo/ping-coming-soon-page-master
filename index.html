@@ -25,7 +25,8 @@
       <form onsubmit="return validation()" novalidate> 
         <div class="row">
           <div class="col-lg-8">
-            <input type="email" id='email' name='email' placeholder='Your email address...'><br>
+            <label id='email' title='email address' class='sr-only'></label>
+            <input type="email" id='email' name='email' aria-labelledby='email' placeholder='Your email address...'><br>
             <div id="error" class="text-sm-center"><p>Please provide a valid email addres</p></div>
             <div id="empty" class="text-sm-center"><p>Whoops! It looks like you forgot to add your email</p></div>
           </div>
