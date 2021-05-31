@@ -13,11 +13,13 @@ function validation() {
         
     } else if (email == '') {
         empty.style.display="block";
+        error.style.display="none";
         document.getElementById('email').style.borderColor = 'red';
         return false;
 
     } else { 
         error.style.display="block";
+        empty.style.display="none"
         document.getElementById('email').style.borderColor = 'red';
         return false;
     }
