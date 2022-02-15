@@ -12,13 +12,13 @@ function validation() {
         
     } else if (email == '') {
         error.style.display = "block";
-        error.innerHTML = "Please provide a valid email address";
+        error.innerHTML = "Whoops! It looks like you forgot to add your email";
         document.getElementById('email').style.borderColor = 'red';
         return false;
 
     } else { 
         error.style.display="block";
-        error.innerHTML = "Whoops! It looks like you forgot to add your email";
+        error.innerHTML = "Please provide a valid email address";
         document.getElementById('email').style.borderColor = 'red';
         return false;
     }
