@@ -1,7 +1,6 @@
 function validation() {
     var email = document.getElementById('email').value; // We save the email given by the user in a variable
     var error = document.getElementById('error'); // We save the error div in a variable
-    var empty = document.getElementById('empty'); // We save the empty div in a variable
 
     // We create a variable with the valid email format
     var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
