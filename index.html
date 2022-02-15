@@ -22,16 +22,16 @@
       <h5>Subscribe and get notified</h5>
 
       <!-- we use novalidate on the form, so it doesn't show the default error message of the browser -->
-      <form onsubmit="return validation()" novalidate> 
+      <form action='#' novalidate> 
         <div class="row">
           <div class="col-lg-8">
-            <label id='email' title='email address' class='sr-only'>Email Address:</label>
-            <input type="email" name='email' aria-labelledby='email' placeholder='Your email address...'><br>
-            <div id="error" class="text-sm-center"><p>Please provide a valid email addres</p></div>
-            <div id="empty" class="text-sm-center"><p>Whoops! It looks like you forgot to add your email</p></div>
+            <label title='email address' class='sr-only'></label>
+            <input id='email' type="email" name='email' aria-labelledby='email' placeholder='Your email address...'><br>
+            <div id="error" class="text-sm-center"><p></p></div>
+            <!-- <div id="empty" class="text-sm-center"><p>Whoops! It looks like you forgot to add your email</p></div> -->
           </div>
           <div class="col-lg-4">
-            <button class="mt-lg-0" type='submit' name="submit">Notify Me</button>
+            <button class="mt-lg-0" id="button" name="submit" onclick="return validation()">Notify Me</button>
           </div>
         </div>
       </form>
